@@ -1,0 +1,11 @@
+<h2>{{ titulo }}</h2>
+<form action=" {% url 'ejercicio:enviarCilindro' %} " method="post">
+    {% csrf_token %}
+    <p>Introduzca el diámetro en metros:</p>
+    <input type="number" name="diametro"><br>
+    <p>Introduzca la altura en metros:</p>
+    <input type="number" name="altura"><br>
+    <br>
+    <button type="submit">Enviar</button>
+
+</form>
