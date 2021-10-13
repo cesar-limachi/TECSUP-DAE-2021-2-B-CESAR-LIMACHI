@@ -19,5 +19,5 @@ def producto(request,producto_id):
 
 def categoria(request,categoria_id):
     categoria = Categoria.objects.all()
-    categoria_filtrada = Producto.objects.filter(Categoria=categoria_id)
-    return render(request,'categorias.html',{'categoria':categoria,'categoria_filtrada':categoria_filtrada})
+    producto = Producto.objects.filter(categoria_id=categoria_id)
+    return render(request,'categoria.html',{'categoria':categoria,'producto':producto})
