@@ -14,7 +14,7 @@
                 <p class="lead"></p>
                 <div class="d-flex">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                    <a class="btn btn-primary" href="#" role="button">Agregar Carrito</a>
+                    <a class="btn btn-primary" href="{% url 'tienda:agregarCarrito' producto.id %}" role="button">Agregar Carrito</a>
                 </div>
             </div>
         </div>
